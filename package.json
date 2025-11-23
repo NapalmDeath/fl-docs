@@ -1,0 +1,14 @@
+{
+  "name": "flatica-docs",
+  "version": "1.0.0",
+  "scripts": {
+    "yfm-build": "yfm -i ./src -o ./build",
+    "build": "rm -rf ./build && npx -y @diplodoc/cli -i ./src -o ./build",
+    "start": "npx -y http-server ./build --port=5001 --host=0.0.0.0 --cors",
+    "dev": "nodemon --watch src --ext md,yaml --exec \"npm run build && npm run start\"",
+    "serve": "npm run build && npm run start"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}

@@ -1,0 +1,7 @@
+allowHTML: true
+search:
+  provider: local
+  tolerance: 2
+  confidense: phrased
+interface:
+  feedback: true
